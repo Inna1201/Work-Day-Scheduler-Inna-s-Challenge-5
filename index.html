@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    
+    <link 
+    rel="stylesheet" 
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" 
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" 
+    crossorigin="anonymous" 
+    />
+    
+      <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    
+    <link rel="stylesheet" href="./Assets/style.css" />
+    <title>Work Day Scheduler</title>
+  </head>
+
+  <body>
+    <header class="jumbotron">
+      <h1 class="display-3">Work Day Scheduler</h1>
+      <p class="lead">A simple calendar app for scheduling your work day</p>
+      <p id="currentDay" class="lead"></p>
+    </header>
+    <div class="savedTask">Event is saved in local storage</div>
+      <!-- Timeblocks go here -->
+      <div class="container">
+
+        <div id="nine" class="row time-block">
+          <div class="col-sm-2 hour">9:00</div>
+          <textarea class="col-sm-8 description"></textarea>
+          <!-- Save icon added using 'fontawsome' icon library -->
+          <button class="col-sm-2 saveBtn"><i class="fas fa-save"></i></button>
+        </div>
+        
+        <div id="ten" class="row time-block">
+          <div class="col-sm-2 hour">10:00</div>
+          <textarea class="col-sm-8 description"></textarea>
+          <button class="col-sm-2 saveBtn"><i class="fas fa-save"></i></button>
+        </div>
+        
+        <div id="eleven" class="row time-block">
+          <div class="col-sm-2 hour">11:00</div>
+          <textarea class="col-sm-8 description"></textarea>
+          <button class="col-sm-2 saveBtn"><i class="fas fa-save"></i></button>
+        </div>
+        
+        <div id="twelve" class="row time-block">
+          <div class="col-sm-2 hour">12:00</div>
+          <textarea class="col-sm-8 description"></textarea>
+          <button class="col-sm-2 saveBtn"><i class="fas fa-save"></i></button>
+        </div>
+       
+        <div id="13teen" class="row time-block">
+          <div class="col-sm-2 hour">13:00</div>
+          <textarea class="col-sm-8 description"></textarea>
+          <button class="col-sm-2 saveBtn"><i class="fas fa-save"></i></button>
+        </div>
+        
+        <div id="14teen" class="row time-block">
+          <div class="col-sm-2 hour">14:00</div>
+          <textarea class="col-sm-8 description"></textarea>
+          <button class="col-sm-2 saveBtn"><i class="fas fa-save"></i></button>
+        </div>
+       
+        <div id="15teen" class="row time-block">
+         <div class="col-sm-2 hour">15:00</div>
+          <textarea class="col-sm-8 description"></textarea>
+          <button class="col-sm-2 saveBtn"><i class="fas fa-save"></i></button>
+        </div>
+        
+        <div id="16teen" class="row time-block">
+          <div class="col-sm-2 hour">16:00</div>
+          <textarea class="col-sm-8 description"></textarea>
+          <button class="col-sm-2 saveBtn"><i class="fas fa-save"></i></button>
+        </div>
+       
+        <div id="17teen" class="row time-block">
+          <div class="col-sm-2 hour">17:00</div>
+          <textarea class="col-sm-8 description"></textarea>
+          <button class="col-sm-2 saveBtn"><i class="fas fa-save"></i></button>
+        </div>
+      
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+
+    <script src="./Assets/script.js"></script>
+
+  </body>
+</html>
+
