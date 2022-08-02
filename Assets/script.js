@@ -11,11 +11,11 @@ function colorBlock() {
     for (var i = 0; i < scheduleTime.length; i++)
         var time = scheduleTime[i]
 
-    if (time > scheduleTime) {
+    if (currentTime > time) {
         $('.time-block').addClass('past');
         $('.time-block').removeClass('future');
         $('.time-block').removeClass('present');
-    } else if (time === scheduleTime) {
+    } else if (currentTime === time) {
         $('.time-block').addClass('present');
         $('.time-block').removeClass('past');
         $('.time-block').removeClass('future');
