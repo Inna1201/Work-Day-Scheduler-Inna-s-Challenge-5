@@ -49,8 +49,13 @@ var taskTime = $(this).parent().attr('id');
 var taskDescription = $(this).siblings('.description').val();
 localStorage. setItem(taskTime, taskDescription);
 
-$('.hide').removeClass('hide')
+$('.hide').removeClass('hide');
 
-})
+setTimeout(fade_out, 5000);
+function fade_out() {
+  $("#savedTask").fadeOut().empty();
+}
+
+});
 
 
