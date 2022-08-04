@@ -59,25 +59,18 @@ var taskDescription = $(this).siblings('.description').val();
 localStorage. setItem(taskTime, taskDescription);
 
 // removes hide class from 'Event is saved in local storage' message 
-$('.hide').removeClass('hide');
+$('.savedTask').addClass('unhide');
 
 
-setTimeout(function() {
-    $('.hide').addClass('hide');    //code goes here
-}, 2000);                           //Time before execution
-
-
-// var myTimeout = setTimeout(myGreeting, 5000);
-// var myGreeting = $('.hide').addClass('hide');
-
-// setTimeout(fade_out, 5000);
-// function fade_out() {
-//   $("#savedTask").fadeOut().empty();
-// };
+// adds hide class to 'Event is saved in local storage' message 
+setTimeout(fade_out, 5000);
+function fade_out() {
+  $(".savedTask").removeClass('unhide');
+  
+};
 
 });
 
-// $('.hide').addClass('hide');
 
 
 
